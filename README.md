@@ -1,1 +1,1 @@
-# Capstone_Games_Analysis
+# Game Pricing Optimization Using Deep Learning
