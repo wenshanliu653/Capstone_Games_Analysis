@@ -1,1 +1,2 @@
-# Capstone_Games_Analysis
+# Game Pricing Optimization Using Deep Learning
+Built a deep learning–based pricing optimization system for video games by combining structured game data with sentiment scores extracted from player reviews. Applied NLP techniques and used a sentiment intensity analyzer to quantify review sentiment as model features. Trained a regression model to predict global sales based on price and sentiment, and simulated price–revenue curves to identify optimal pricing points.
