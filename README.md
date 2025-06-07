@@ -1,6 +1,8 @@
-# Game Pricing Optimization Using Deep Learning
+# Game Pricing Optimization Using Deep Learning #
+
 Built a deep learning–based pricing optimization system for video games by combining structured game data with sentiment scores extracted from player reviews. Applied NLP techniques and used a sentiment intensity analyzer to quantify review sentiment as model features. Trained a regression model to predict global sales based on price and sentiment, and simulated price–revenue curves to identify optimal pricing points.
----
+
+
 ## 📌 Problem Statement
 
 Game publishers face a recurring challenge:  
@@ -11,7 +13,7 @@ This project addresses:
 - The neglect of qualitative factors like **player sentiment**
 - The impact of **seasonal release timing** on projected revenue
 
----
+
 
 ## 📊 Data Sources
 
@@ -22,7 +24,7 @@ Data was collected and merged from:
 
 **Fuzzy string matching** and TF-IDF cosine similarity were used to align game titles across platforms.
 
----
+
 
 ## 🔄 Data Preprocessing & NLP Pipeline
 
@@ -33,7 +35,7 @@ Key preprocessing and NLP steps:
 - Sentiment labeling with **VADER** + pseudo-labeling using **Random Forest**
 - TF-IDF vectorization for supervised sentiment classification
 
----
+
 
 
 ## 📈 Exploratory Data Analysis Highlights
@@ -43,19 +45,18 @@ Key preprocessing and NLP steps:
 - **Action and Adventure** genres have higher average sales
 - Games released in **October** tend to have the highest sales
 
-- ---
 
 ## 🤖 Modeling Approach
 
 We used both **classification and regression** models:
 
-### Sentiment Classification
+### 1. Sentiment Classification
 - Model: Random Forest
 - Accuracy: **82%**
 - F1-score (Positive): **0.90**
 - Used pseudo-labeling based on VADER to improve generalizability
 
-### Sales Prediction
+### 2. Sales Prediction
 Models tested:
 - Simple Linear Regressiont achieved **R² = 0.635**
 - Random Forest (unturned) achieved **R² = 0.999**
@@ -63,7 +64,6 @@ Models tested:
 - Multilayer Perceptrons (MLPs - Model16): **R² = 0.973**
 
 
----
 
 ## 💡 Case Study: Dragon Quest Builders 3
 
@@ -76,7 +76,7 @@ Models tested:
 📌 **Optimal Price:** $36.99  
 📌 **Insight:** Revenue is sensitive to **seasonality** and **floating-point precision**, even when predicted sales appear identical.
 
----
+
 
 ## 🧠 Key Takeaways
 
@@ -84,7 +84,8 @@ Models tested:
 2. **Release Timing** (e.g., holiday season) plays a major role in sales potential.
 3. **Simulation-based pricing** can help publishers maximize revenue before release.
 
----
+
+
 
 ## 📌 Author
 
